@@ -40,7 +40,7 @@ module.exports = {
 		* 这里就是通过服务端添加一个mchid
 		* 然后让payjs回调给隔壁的/access/payjs/callback
 		*/
-		var payjsCallbackUrl = `${swc.config.payjs.callback_url_head}/keke/page/access/payjs/callback?bussiness_callback_url=${query.bussiness_callback_url}&appid=${query.appid}`;
+		var payjsCallbackUrl = `${swc.config.payjs.callback_url_head}/keke/api/access/payjs/callback?bussiness_callback_url=${query.bussiness_callback_url}&appid=${query.appid}`;
 		var href = `https://payjs.cn/api/openid?mchid=${swc.config.payjs.mchid}&callback_url=${payjsCallbackUrl}`;
 
 		res.redirect(302, href);
