@@ -7,10 +7,10 @@ module.exports = async (swc, options)=>{
 	// swc = await swc.registerMysqlDao(swc);
 	swc = await swc.registerStatic(swc, {
 		items : [{
-			path : '/keke/res',
+			path : '/'+swc.config.server.bussiness_name+'/res',
 			staticFilePath : `static/res`
 		}, {
-			path : '/keke/access',
+			path : '/'+swc.config.server.bussiness_name+'/access',
 			staticFilePath : `static/access`
 		}]
 	});

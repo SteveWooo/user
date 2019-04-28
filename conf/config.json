@@ -1,6 +1,6 @@
 {
 	"server" : {
-		"port" : 81,
+		"port" : 91,
 		"base_res_path" : "res",
 		"public_salt" : "123"
 	},

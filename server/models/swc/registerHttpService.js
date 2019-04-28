@@ -54,7 +54,7 @@ async function registerHttpService(swc, options){
 		config : m.config
 	}));
 
-	swc.app[m.config.method](m.config.path, ...[middlewares]);
+	swc.app[m.config.method]('/' + swc.config.server.bussiness_name + m.config.path, ...[middlewares]);
 
 	return swc;
 }

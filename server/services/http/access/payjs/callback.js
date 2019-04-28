@@ -5,10 +5,10 @@
 */
 
 //test url : 
-//http://localhost:81/keke/api/access/payjs/callback?appid=test&openid=123&bussiness_callback_url=/
+//http://localhost:81/swc/api/access/payjs/callback?appid=test&openid=123&bussiness_callback_url=/
 module.exports = {
 	config : {
-		path : '/keke/api/access/payjs/callback',
+		path : '/api/access/payjs/callback',
 		method : 'get',
 		middlewares : [],
 		model : {
