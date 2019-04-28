@@ -5,6 +5,7 @@
 module.exports = async (swc, options)=>{
 	return async function(req, res, next){
 		req.swc = swc;
+		req.responseType = 'json'; //默认json
 		if(options.config.model){
 			req.response = options.config.model;
 		} else {

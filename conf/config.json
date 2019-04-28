@@ -14,5 +14,15 @@
 		"password" : "123456",
 		"database" : "keke_stage",
 		"port" : 3306
+	},
+	"payjs" : {
+		"secret" : "test",
+		"mchid" : "test"
+	},
+	"bussiness" : {
+		"apps" : [{
+			"appid" : "test",
+			"secret" : "test"
+		}]
 	}
 }

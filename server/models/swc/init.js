@@ -132,8 +132,23 @@ async function init(){
 		* 抽象底层工具库
 		*/
 		utils : {
-			image : require(`${path.resolve()}/server/utils/image`)
+			image : require(`${path.resolve()}/server/utils/image`),
+			base64 : require(`${path.resolve()}/server/utils/base64`),
 		},
+
+		/**
+		* 一些实体对象们，如用户体系
+		*/
+		objects : {
+			user : require(`${path.resolve()}/server/models/objects/user`),
+		},
+
+		/**
+		* 统计错误规范
+		* @param code 错误码
+		* @param message 附带信息
+		*/
+		Error : require(`${path.resolve()}/server/models/status/error`),
 
 		/**
 		* 控制器载入接口

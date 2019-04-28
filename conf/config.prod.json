@@ -14,5 +14,15 @@
 		"password" : "lyoko123RAIN",
 		"database" : "keke_stage",
 		"port" : 8001
+	},
+	"payjs" : {
+		"secret" : "4oetPNesCytq8mQu",
+		"mchid" : "1531506461",
+		"callback_url_head" : "http://www.deadfishcryprto.com"
+	},
+	"bussiness" : {
+		"apps" : {
+			"test" : "test"
+		}
 	}
 }
