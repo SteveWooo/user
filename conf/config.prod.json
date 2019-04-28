@@ -1,0 +1,18 @@
+{
+	"server" : {
+		"port" : 81,
+		"base_res_path" : "res",
+		"public_salt" : "a855931d31feb334981d61e37a46a032"
+	},
+	"wechat" : {
+		"appid" : "",
+		"secret" : ""
+	},
+	"mysql" : {
+		"host" : "115.28.241.66",
+		"user" : "root",
+		"password" : "lyoko123RAIN",
+		"database" : "keke_stage",
+		"port" : 8001
+	}
+}
