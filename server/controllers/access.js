@@ -4,7 +4,7 @@
 */
 const path = require('path')
 module.exports = async (swc, options)=>{
-	// swc = await swc.registerMysqlDao(swc);
+	swc = await swc.registerMysqlDao(swc);
 	swc = await swc.registerStatic(swc, {
 		items : [{
 			path : '/'+swc.config.server.bussiness_name+'/res',

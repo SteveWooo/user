@@ -8,7 +8,6 @@ module.exports = async (swc, options)=>{
 		host : swc.config.mysql.host,
 		dialect : "mysql",
 		port : swc.config.mysql.port || 3306,
-		operatorsAliases: false,
 		pool : {
 			max : 5,
 			min : 0,

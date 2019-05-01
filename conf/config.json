@@ -2,7 +2,8 @@
 	"server" : {
 		"port" : 91,
 		"base_res_path" : "res",
-		"public_salt" : "123"
+		"public_salt" : "123",
+		"bussiness_name" : "swc"
 	},
 	"wechat" : {
 		"appid" : "",
@@ -12,17 +13,17 @@
 		"host" : "localhost",
 		"user" : "root",
 		"password" : "123456",
-		"database" : "keke_stage",
+		"database" : "swc_us",
 		"port" : 3306
 	},
 	"payjs" : {
 		"secret" : "test",
-		"mchid" : "test"
+		"mchid" : "test",
+		"callback_url_head" : "http://www.deadfishcrypto.com"
 	},
 	"bussiness" : {
-		"apps" : [{
-			"appid" : "test",
-			"secret" : "test"
-		}]
+		"apps" : {
+			"test" : "test"
+		}
 	}
 }

@@ -126,6 +126,7 @@ async function init(){
 		middlewares : {
 			authAdmin : require(`${path.resolve()}/server/middlewares/authAdmin`),
 			authWechat : require(`${path.resolve()}/server/middlewares/authWechat`),
+			authBussiness : require(`${path.resolve()}/server/middlewares/authBussiness`),
 		},
 
 		/**
