@@ -97,7 +97,7 @@ module.exports = {
 
 		var now = +new Date();
 		//生成用户id
-		var userid = await swc.objects.user.getWXUserid(swc, {
+		var userid = await swc.models.user.getWXUserid(swc, {
 			openid : query.openid,
 			appid : query.appid
 		});
