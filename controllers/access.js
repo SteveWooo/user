@@ -13,6 +13,14 @@ module.exports = async (swc, options)=>{
 		modelName : 'authBussiness',
 		path : `${path.resolve()}/middlewares/authBussiness`
 	})
+	swc = await swc.registerMiddleware(swc, {
+		modelName : 'authAdmin',
+		path : `${path.resolve()}/middlewares/authAdmin`
+	})
+	swc = await swc.registerMiddleware(swc, {
+		modelName : 'authWechat',
+		path : `${path.resolve()}/middlewares/authWechat`
+	})
 
 	swc = await swc.registerStatic(swc, {
 		items : [{
