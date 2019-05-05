@@ -16,8 +16,8 @@ module.exports = async (swc, options)=>{
 
 	swc = await swc.registerStatic(swc, {
 		items : [{
-			path : `/${swc.config.server.bussiness_name}/static`,
-			staticFilePath : `${path.resolve()}/static`
+			path : `/${swc.config.server.bussiness_name}/access`,
+			staticFilePath : `${path.resolve()}/static/access`
 		}]
 	});
 	swc = await swc.registerHttpService(swc, {
