@@ -29,8 +29,5 @@ module.exports = async (swc, options)=>{
 		path : `${path.resolve()}/models/objects/user`
 	})
 
-	//错误统一出口
-	swc.Error = require(`${path.resolve()}/models/status/error`);
-
 	return swc;
 }
