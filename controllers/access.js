@@ -10,15 +10,15 @@ module.exports = async (swc, options)=>{
 	});
 
 	swc = await swc.registerMiddleware(swc, {
-		modelName : 'authBussiness',
+		moduleName : 'authBussiness',
 		path : `${path.resolve()}/middlewares/authBussiness`
 	})
 	swc = await swc.registerMiddleware(swc, {
-		modelName : 'authAdmin',
+		moduleName : 'authAdmin',
 		path : `${path.resolve()}/middlewares/authAdmin`
 	})
 	swc = await swc.registerMiddleware(swc, {
-		modelName : 'authWechat',
+		moduleName : 'authWechat',
 		path : `${path.resolve()}/middlewares/authWechat`
 	})
 
