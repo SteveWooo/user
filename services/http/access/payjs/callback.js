@@ -21,7 +21,7 @@ async function updateUserToken(swc, options){
 	if(user.count == 0){
 		//创建用户
 		var user = {
-			openid : options.openid,
+			openid : 'none',
 			userid : options.userid,
 			token : options.token,
 			appid : options.appid,
